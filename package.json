@@ -1,0 +1,21 @@
+{
+  "name": "react-native-location-capture",
+  "version": "0.0.1",
+  "description": "Capture the user's location on demand or in the background",
+  "main": "locationCapture.js",
+  "_ignore": "typings: ./deviceinfo.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erikwestra/react-native-location-capture"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios",
+    "android",
+    "gps",
+    "location"
+  ],
+  "author": "Erik Westra <ewestra@gmail.com> (https://github.com/erikwestra)",
+  "license": "MIT"
+}

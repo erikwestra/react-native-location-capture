@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E4EBE21EAD616B00648AB3 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4EBD91EAD616B00648AB3 /* Database.m */; };
+		03E4EBE31EAD616B00648AB3 /* LocationCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4EBDB1EAD616B00648AB3 /* LocationCapture.m */; };
+		03E4EBE41EAD616B00648AB3 /* LocationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4EBDD1EAD616B00648AB3 /* LocationStore.m */; };
+		03E4EBE51EAD616B00648AB3 /* TMReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4EBDF1EAD616B00648AB3 /* TMReachability.m */; };
+		03E4EBE61EAD616B00648AB3 /* UploadQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E4EBE11EAD616B00648AB3 /* UploadQueue.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03E4EBC71EAD60CF00648AB3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03E4EBC91EAD60CF00648AB3 /* libLocationCapture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLocationCapture.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E4EBD81EAD616B00648AB3 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		03E4EBD91EAD616B00648AB3 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		03E4EBDA1EAD616B00648AB3 /* LocationCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationCapture.h; sourceTree = "<group>"; };
+		03E4EBDB1EAD616B00648AB3 /* LocationCapture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationCapture.m; sourceTree = "<group>"; };
+		03E4EBDC1EAD616B00648AB3 /* LocationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationStore.h; sourceTree = "<group>"; };
+		03E4EBDD1EAD616B00648AB3 /* LocationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationStore.m; sourceTree = "<group>"; };
+		03E4EBDE1EAD616B00648AB3 /* TMReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMReachability.h; sourceTree = "<group>"; };
+		03E4EBDF1EAD616B00648AB3 /* TMReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMReachability.m; sourceTree = "<group>"; };
+		03E4EBE01EAD616B00648AB3 /* UploadQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadQueue.h; sourceTree = "<group>"; };
+		03E4EBE11EAD616B00648AB3 /* UploadQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadQueue.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E4EBC61EAD60CF00648AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03E4EBC01EAD60CF00648AB3 = {
+			isa = PBXGroup;
+			children = (
+				03E4EBD71EAD616B00648AB3 /* ios */,
+				03E4EBCA1EAD60CF00648AB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03E4EBCA1EAD60CF00648AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E4EBC91EAD60CF00648AB3 /* libLocationCapture.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E4EBD71EAD616B00648AB3 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				03E4EBD81EAD616B00648AB3 /* Database.h */,
+				03E4EBD91EAD616B00648AB3 /* Database.m */,
+				03E4EBDA1EAD616B00648AB3 /* LocationCapture.h */,
+				03E4EBDB1EAD616B00648AB3 /* LocationCapture.m */,
+				03E4EBDC1EAD616B00648AB3 /* LocationStore.h */,
+				03E4EBDD1EAD616B00648AB3 /* LocationStore.m */,
+				03E4EBDE1EAD616B00648AB3 /* TMReachability.h */,
+				03E4EBDF1EAD616B00648AB3 /* TMReachability.m */,
+				03E4EBE01EAD616B00648AB3 /* UploadQueue.h */,
+				03E4EBE11EAD616B00648AB3 /* UploadQueue.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E4EBC81EAD60CF00648AB3 /* LocationCapture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E4EBD21EAD60CF00648AB3 /* Build configuration list for PBXNativeTarget "LocationCapture" */;
+			buildPhases = (
+				03E4EBC51EAD60CF00648AB3 /* Sources */,
+				03E4EBC61EAD60CF00648AB3 /* Frameworks */,
+				03E4EBC71EAD60CF00648AB3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationCapture;
+			productName = LocationCapture;
+			productReference = 03E4EBC91EAD60CF00648AB3 /* libLocationCapture.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E4EBC11EAD60CF00648AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Erik Westra";
+				TargetAttributes = {
+					03E4EBC81EAD60CF00648AB3 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = AFXG78DQTH;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 03E4EBC41EAD60CF00648AB3 /* Build configuration list for PBXProject "LocationCapture" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03E4EBC01EAD60CF00648AB3;
+			productRefGroup = 03E4EBCA1EAD60CF00648AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E4EBC81EAD60CF00648AB3 /* LocationCapture */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E4EBC51EAD60CF00648AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E4EBE61EAD616B00648AB3 /* UploadQueue.m in Sources */,
+				03E4EBE51EAD616B00648AB3 /* TMReachability.m in Sources */,
+				03E4EBE41EAD616B00648AB3 /* LocationStore.m in Sources */,
+				03E4EBE21EAD616B00648AB3 /* Database.m in Sources */,
+				03E4EBE31EAD616B00648AB3 /* LocationCapture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03E4EBD01EAD60CF00648AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03E4EBD11EAD60CF00648AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E4EBD31EAD60CF00648AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AFXG78DQTH;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03E4EBD41EAD60CF00648AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = AFXG78DQTH;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E4EBC41EAD60CF00648AB3 /* Build configuration list for PBXProject "LocationCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E4EBD01EAD60CF00648AB3 /* Debug */,
+				03E4EBD11EAD60CF00648AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E4EBD21EAD60CF00648AB3 /* Build configuration list for PBXNativeTarget "LocationCapture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E4EBD31EAD60CF00648AB3 /* Debug */,
+				03E4EBD41EAD60CF00648AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E4EBC11EAD60CF00648AB3 /* Project object */;
+}
