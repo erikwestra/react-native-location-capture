@@ -305,7 +305,7 @@ static NSString* LOCATION_INDEX_SCHEMA =
     }
 
     NSString* latest_anchor;
-    if (max_rec_id != nil) {
+    if ((max_rec_id != nil) && (max_rec_id != [NSNull null])) {
         NSString* max_id_str    = [max_rec_id stringValue];
         NSData*   max_id_data   = [max_id_str
                                     dataUsingEncoding:NSUTF8StringEncoding];
