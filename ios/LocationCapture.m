@@ -52,6 +52,7 @@ typedef enum {
 @property (atomic, assign) UploadRequestFormat    upload_request_format;
 @property (atomic, strong) NSString*              upload_locations_param;
 @property (atomic, strong) NSDictionary*          upload_extra_params;
+@property (atomic, strong) NSDictionary*          upload_extra_headers;
 @property (atomic, assign) BOOL                   upload_field_timestamp;
 @property (atomic, assign) BOOL                   upload_field_latitude;
 @property (atomic, assign) BOOL                   upload_field_longitude;
@@ -272,6 +273,7 @@ RCT_EXPORT_MODULE();
         self.upload_request_format       = kUploadRequestFormatJSON;
         self.upload_locations_param      = @"locations";
         self.upload_extra_params         = nil;
+        self.upload_extra_headers        = nil;
         self.upload_field_timestamp      = YES;
         self.upload_field_latitude       = YES;
         self.upload_field_longitude      = YES;
@@ -513,6 +515,14 @@ RCT_EXPORT_MODULE();
 
     [request setHTTPMethod:@"POST"];
     [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+
+    if (self.upload_extra_headers != nil) {
+        for (NSString* key in self.upload_extra_headers) {
+            NSString* value = [self.upload_extra_headers objectForKey:key];
+            [request addValue:value forHTTPHeaderField:key];
+        }
+    }
+
     [request setHTTPBody:encoded_data];
 
     return request;
@@ -762,6 +772,10 @@ RCT_EXPORT_METHOD(configure:(NSDictionary*)options) {
 
     if (options[@"upload_extra_params"] != nil) {
         self.upload_extra_params = options[@"upload_extra_params"];
+    }
+
+    if (options[@"upload_extra_headers"] != nil) {
+        self.upload_extra_headers = options[@"upload_extra_headers"];
     }
 
     if (options[@"upload_fields"] != nil) {

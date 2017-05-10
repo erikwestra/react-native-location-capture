@@ -98,6 +98,7 @@ public class LocationCaptureModule extends ReactContextBaseJavaModule {
     private String  upload_request_format;
     private String  upload_locations_param;
     private HashMap upload_extra_params;
+    private HashMap upload_extra_headers;
     private List    upload_fields;
     private int     keep_locations_for;
 
@@ -112,6 +113,7 @@ public class LocationCaptureModule extends ReactContextBaseJavaModule {
         this.upload_request_format  = "JSON";
         this.upload_locations_param = "locations";
         this.upload_extra_params    = new HashMap();
+        this.upload_extra_headers   = new HashMap();
         this.upload_fields          = new ArrayList();
         this.keep_locations_for     = 30;
 
@@ -194,6 +196,19 @@ public class LocationCaptureModule extends ReactContextBaseJavaModule {
                 String value = extra_params.getString(key);
 
                 this.upload_extra_params.put(key, value);
+            }
+        }
+
+        if (options.hasKey("upload_extra_headers")) {
+            ReadableMap extra_headers = options.getMap("upload_extra_headers");
+            ReadableMapKeySetIterator iterator = extra_headers.keySetIterator();
+
+            this.upload_extra_headers.clear();
+            while (iterator.hasNextKey()) {
+                String key   = iterator.nextKey();
+                String value = extra_headers.getString(key);
+
+                this.upload_extra_headers.put(key, value);
             }
         }
 
